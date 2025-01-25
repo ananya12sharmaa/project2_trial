@@ -1,12 +1,32 @@
 #include <stdio.h>
 
-void printValues(int*);
-void sort(int*);
+// above is the standard input output library
+
+//new copy from memory
+// 1st, I made the printValue function, taking the argument of an array
+// 2nd i made the swap function, taking 2int*a,b
+// 3rd i made the sort function, with a nested loop
+// then main function
+// then calling.
+
+
+//declaring the protype of the functions we will be using
+
+//no idea is we even need to declare the prototype? is it need in c?
+
+/* void printValues(int*);
+ * void sort(int*);
 void Swap(int*, int*);
+*/
+
+// we will be passing the refernce as the address using &
+// we will be receiving a poitner using* in the syntax int *variable name when functions are called.i believe?
+
+//we have functions with void return type, because we will be manipulating/arranging the data using pointers
 
 const int MAX= 9;
 
-void printValues(int *arrayval)
+void printValues(int *arrayval[])
 {
 	printf("[");
 	for(int i =0; i< MAX-1; i++)
